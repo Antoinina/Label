@@ -1,0 +1,98 @@
+/*General template*/
+@font-face {
+    font-family: 'ChronicleDispX';
+    src: url('../assets/Chronicle_Display_Light.otf') format('opentype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nobel-Regular';
+    src: url('../assets/Nobel-Regular.eot');
+    src: url('../assets/Nobel-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/Nobel-Regular.woff2') format('woff2'),
+        url('../assets/Nobel-Regular.woff') format('woff'),
+        url('../assets/Nobel-Regular.ttf') format('truetype'),
+        url('../assets/Nobel-Regular.svg#Nobel-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    margin:0;
+    padding:0;
+}
+.xxs-container{
+    width: 38mm;
+    height: 38mm;
+    text-align: center; 
+}
+.order-xxs{
+    width: 38mm;
+    height: 38mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.order-xxs img{
+    width: 15%;
+    height: auto;
+}
+.order-xxs div{
+    font-size: 10pt;
+}
+.text-container{
+    margin: 5.182mm 3mm 13.625mm 3mm;
+    position: relative;
+}
+.text-container__title{
+    width:32mm;
+    height:8.5mm;
+    font-size:10pt;
+    font-family: 'Nobel-regular', 'Times New Roman', Times, serif;
+    text-transform: uppercase ;
+}
+.text-container__title--tall{
+    height:13.847mm!important;
+}
+.text-container__subtitle{
+    width:32mm;
+    height:10.693mm;
+    font-size: 6pt;
+    font-family: 'ChronicleDispX', 'Times New Roman', Times, serif;
+    letter-spacing: 0.13em;
+}
+.text-container__subtitle--small{
+    height: 5.347mm!important;
+}
+.xxs-container__logo{
+    width:38mm;
+    height:5.825mm;
+    position: absolute;
+    top:0; /*Position of the logo*/
+    margin-top:25.5mm;
+
+}
+.xxs-container__logo img{
+    width:55%;
+    margin-top:1mm;   
+}
+
+/*=============================================================================*/
+
+/*Specific template*/
+.text-container__title--court{
+    letter-spacing: 0.2em;
+}
+.text-container__title--court-two{
+    letter-spacing: 0.15em;
+}
+.text-container__title--long{
+    letter-spacing: 0.05em;
+}
+.text-center{
+    display: flex; /*Center the subtitle in the container*/
+}   
+.text-center span{
+    margin: auto;
+}

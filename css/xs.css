@@ -1,0 +1,92 @@
+/*General template*/
+@font-face {
+    font-family: 'ChronicleDispX';
+    src: url('../assets/Chronicle_Display_Light.otf') format('opentype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nobel-Regular';
+    src: url('../assets/Nobel-Regular.eot');
+    src: url('../assets/Nobel-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/Nobel-Regular.woff2') format('woff2'),
+        url('../assets/Nobel-Regular.woff') format('woff'),
+        url('../assets/Nobel-Regular.ttf') format('truetype'),
+        url('../assets/Nobel-Regular.svg#Nobel-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    margin:0;
+    padding:0;
+}
+.xs-container{
+    width: 50mm;
+    height: 50mm;
+    text-align: center;
+}
+.order-xs{
+    width: 50mm;
+    height: 50mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.order-xs img{
+    width: 15%;
+    height: auto;
+}
+.order-xs div{
+    font-size: 13pt;
+}
+.text-container{
+    margin: 6.3mm 4mm 17.35mm 4mm;
+}
+.text-container__title{
+    width:42mm;
+    height:11mm;
+    font-size:15pt;
+    font-family: 'Nobel-regular', 'Times New Roman', Times, serif;
+    text-transform: uppercase ;
+}
+.text-container__title--tall{
+    height:18.675mm!important;
+}
+.text-container__subtitle{
+    width:42mm;
+    height:15.35mm;
+    font-size: 6pt;
+    font-family: 'ChronicleDispX', 'Times New Roman', Times, serif;
+    letter-spacing: 0.13em;
+}
+.text-container__subtitle--small{
+    height: 7.675mm!important;
+}
+.container__logo{
+    width:50mm;
+    height:9.353mm;
+    position: absolute;
+    top:0; /*Position of the logo*/
+    margin-top:35.4mm;
+}
+.container__logo img{
+    width:55%; 
+}
+
+/*=============================================================================*/
+
+/*Specific template*/
+.text-container__title--court{
+    letter-spacing: 0.15em;
+}
+.text-container__title--long{
+    letter-spacing: 0.05em;
+}
+.text-center{
+    display: flex; /*Center the subtitle in the container*/
+}   
+.text-center span{
+    margin: auto;
+}
